@@ -4,13 +4,14 @@ const nudo = require('./nudo');
 const final = require('./final');
 
 
-let personaje = "Andy";
-let villano = "Rich";
-let lugar = "En far far away";
-let hobby = "programar";
+const  personaje = "Andy";
+const  edad = Math.round(Math.random() * 100);
+const  villano = "Rich";
+const  lugar = "En far far away";
+const  hobby = "programar";
 
 
-console.log(intro.historia(personaje, lugar));
+console.log(intro.historia(personaje, lugar, edad));
 console.log(nudo.historia(personaje, villano, hobby, lugar));
 console.log(final.historia(personaje, villano, hobby, lugar));
 
